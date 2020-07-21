@@ -1,0 +1,23 @@
+{
+  "name": "employeetracker",
+  "version": "1.0.0",
+  "description": "A CLI to help a company manage their employees",
+  "main": "employeeReadData.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielalexvega/employeeTracker.git"
+  },
+  "author": "Daniel Vega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielalexvega/employeeTracker/issues"
+  },
+  "homepage": "https://github.com/danielalexvega/employeeTracker#readme",
+  "dependencies": {
+    "inquirer": "^7.3.2",
+    "mysql": "^2.18.1"
+  }
+}
