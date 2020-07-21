@@ -1,17 +1,3 @@
-/*
-What would you like to do?
-list
-view all employees
-view all employees by department
-view all employees by manager
-add employee
-remove employee
-update employee
-
-view all roles
-view all departments
-*/
-
 const inquirer = require('inquirer');
 
 module.exports = {
@@ -23,6 +9,7 @@ module.exports = {
                 choices: [
                     'View all employees', //no further questions
                     'View all employees by department', //which department [x]
+                    'View all managers',
                     'View all employees by manager', //which manager [x]
                     'Add employee', // What's their full name? [x], What's their role? [x] Who's their manager? [x] Are they a manager? [x], 
                     'Remove employee', //What's their full name [x]
@@ -32,7 +19,7 @@ module.exports = {
                     'View all roles', // [x]
                     'Add role', // What is the name of the role? [x] What department? [x] What is the salary? [x]
                     'Remove role', // What is the name of the role? [x]
-                    'Update role', // What role do you want to update? [x] 
+                    'Update role title', // What role do you want to update? [x] 
                     'Update salary', // What is the new salary? [x]
                     'View all departments', // [x]
                     'Add department', // [x] What is the name of the new department? 
@@ -125,7 +112,7 @@ module.exports = {
                 type: 'list',
                 message: 'Which employee do you want to update?',
                 choices: employees,
-                name: 'updateFullName'
+                name: 'response'
             }
         ]);
     },
@@ -135,7 +122,7 @@ module.exports = {
                 type: 'list',
                 message: 'What is the updated role?',
                 choices: roles,
-                name: 'updateRole'
+                name: 'response'
             }
         ]);
     },
@@ -145,16 +132,7 @@ module.exports = {
                 type: 'list',
                 message: 'Who is the updated manager?',
                 choices: managers,
-                name: 'updatedManager'
-            }
-        ]);
-    },
-    askUpdateIfManager: () => {
-        return inquirer.prompt([
-            {
-                type: 'confirm',
-                message: 'Are you promoting this employee to a manager role?',
-                name: 'updateIfManager'
+                name: 'response'
             }
         ]);
     },
@@ -164,7 +142,7 @@ module.exports = {
             {
                 type: 'input',
                 message: 'What is the name of the new role?',
-                name: 'newRoleTitle'
+                name: 'response'
             }
         ]);
     },
@@ -174,7 +152,7 @@ module.exports = {
                 type: 'list',
                 message: 'Which department is the new role in?',
                 choices: departments,
-                name: 'newRoleDepartment'
+                name: 'response'
             }
         ])
     },
@@ -183,7 +161,7 @@ module.exports = {
             {
                 type: 'inout',
                 message: "What is the new role's salary?",
-                name: 'newRoleSalary'
+                name: 'response'
             }
         ]);
     },
@@ -194,7 +172,7 @@ module.exports = {
                 type: 'list',
                 message: 'Which role do you want to remove?',
                 choices: roles,
-                name: 'removeRoleTitle'
+                name: 'response'
             }
         ]);
     },
@@ -205,7 +183,7 @@ module.exports = {
                 type: 'list',
                 message: 'Which role do you want to update?',
                 choices: roles,
-                name: 'updateRole'
+                name: 'response'
             }
         ]);
     },
@@ -214,7 +192,7 @@ module.exports = {
             {
                 type: 'input',
                 message: "What is the role's updated title?",
-                name: 'updateRoleTitle'
+                name: 'response'
             }
         ]);
     },
@@ -223,7 +201,7 @@ module.exports = {
             {
                 type: 'input',
                 message: "What is the role's updated salary?",
-                name: 'updateRoleSalary'
+                name: 'response'
             }
         ]);
     },
@@ -232,7 +210,7 @@ module.exports = {
             {
                 type: 'input',
                 message: 'What is the name of the new department?',
-                name: 'newDepartmentName'
+                name: 'response'
             }
         ]);
 
@@ -243,7 +221,7 @@ module.exports = {
                 type: 'list',
                 message: 'Which department do you want to remove?',
                 choices: departments,
-                name: 'removeDepartmentName'
+                name: 'response'
             }
         ]);
     },
