@@ -229,7 +229,7 @@ module.exports = {
         return inquirer.prompt([
             {
                 type: 'confirm',
-                message: 'Would you like to start over?',
+                message: 'Would you like to continue?',
                 name: 'response'
             }
         ]);

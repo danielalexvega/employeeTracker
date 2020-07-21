@@ -1,4 +1,5 @@
 const mysql = require('mysql');
+const boxen = require('boxen');
 const { askMainQuestion, askDepartmentName, askMangerName, askNewFullName, askNewEmployeeRole, askNewRole,
     askManger, askIfManger, askRemoveFullName, askUpdateEmployee, askUpdateEmployeeRole,
     askUpdateManager, askNewRoleDepartment, askNewRoleSalary, askRemoveRole, askUpdateRole, 
@@ -20,11 +21,12 @@ const query = new QueryObj(connection);
 connection.connect(async (err) => {
     if (err) throw err;
     try {
+        console.log(boxen('EMPLOYEE TRACKER', {padding: 1, borderStyle: 'bold', borderColor: 'blue', align: 'center'}))
         start();
     } catch (err) {
         console.log(err);
     } finally {
-        console.log('nothing');
+      
     }
 });
 
@@ -90,7 +92,7 @@ const start = async () => {
     }
 }
 
-const displayStartover = () => {
+const displayStartover = async () => {
     console.log('\n');
     let startOver = await askStartOver();
     startOver.response ? start() : end();
@@ -390,6 +392,6 @@ const RemoveDepartment = async () => {
 }
 //End the program, wish them a nice day!
 const end = () => {
-    console.log('\n Have a nice day! \n');
+    console.log(boxen('HAVE A NICE DAY!', {padding: 1, borderStyle: 'bold', borderColor: 'red', align: 'center'}))
     connection.end();
 }
