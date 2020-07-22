@@ -30,7 +30,9 @@ Note Taker users a number of open source projects to work properly:
 * [node.js] - evented I/O for the backend
 * [InquirerJs] - fast node.js network app framework [@tjholowaychuk]
 * [MySql] - NPM package to connect to your MySQL database and perform queries
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
+
+If you have more questions, you can hit me up on [twitter].
+
 
 
 
