@@ -4,6 +4,8 @@ Employee Tracker is an interface that makes it easy for non-developers to view a
 
 ![](images/EmployeeTrackerBeginning.JPG)
 
+![](images/videoScreenShot.JPG)
+
 [Click] to see the video of the app being demoed.
 
 ## Description
