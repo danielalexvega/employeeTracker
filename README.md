@@ -26,8 +26,18 @@ Employee Tracker helps keep track of employees in a company; it let's you view, 
 * Add department
 * Remove department
 
+## Usage
+At the beginning of the app, the user is presented with a list of options to pick from.
 
-###Tech
+![](images/StartChoices.JPG)
+
+When the user selects 'View all Employees', a table is displayed with the employees' department, role, and full name.
+
+![](ViewAllEmployees.JPG)
+
+
+
+##Tech
 
 Note Taker users a number of open source projects to work properly:
 
