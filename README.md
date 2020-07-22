@@ -43,11 +43,15 @@ An example of the display when the user selects 'View all employees by departmen
 
 ![](images/engineeringDepartment.JPG)
 
+Enjoy the app, and make sure to have a nice day. 
+
+![](images/GoodBye.JPG)
+
 
 
 ## Tech
 
-Note Taker users a number of open source projects to work properly:
+Employee Tracker users a number of open source projects to work properly:
 
 * [node.js] - evented I/O for the backend
 * [InquirerJs] - an easily embeddable and beautiful command line interface for node.js
