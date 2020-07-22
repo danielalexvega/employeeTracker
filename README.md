@@ -28,10 +28,10 @@ Employee Tracker helps keep track of employees in a company; it let's you view, 
 Note Taker users a number of open source projects to work properly:
 
 * [node.js] - evented I/O for the backend
-* [InquirerJs] - fast node.js network app framework [@tjholowaychuk]
+* [InquirerJs] - an easily embeddable and beautiful command line interface for node.js
 * [MySql] - NPM package to connect to your MySQL database and perform queries
 
-If you have more questions, you can hit me up on [twitter].
+If you have more questions, you can hit me up on twitter @zlamdanielvega. 
 
 
 
@@ -39,7 +39,7 @@ If you have more questions, you can hit me up on [twitter].
 
 
 
-[twitter]: <www.twitter.com/zlamdanielvega>
+
   [node.js]: <http://nodejs.org>
   [MySql]: <https://www.npmjs.com/package/mysql>
   [jQuery]: <http://jquery.com>
