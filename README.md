@@ -2,6 +2,8 @@
 
 Employee Tracker is an interface that makes it easy for non-developers to view and interact with information stored in a database. This app uses node, inquirer, and MySQL.
 
+[Click] to see the video of the app being demoed.
+
 ## Description
 
 Employee Tracker helps keep track of employees in a company; it let's you view, add, update, and remove employees, roles, and departments, and everything in between. Some of the functions at the users finger tips are:
@@ -44,3 +46,4 @@ If you have more questions, you can hit me up on twitter @zlamdanielvega.
   [MySql]: <https://www.npmjs.com/package/mysql>
   [jQuery]: <http://jquery.com>
   [InquirerJs]: <https://www.npmjs.com/package/inquirer/v/0.2.3>
+  [Click]<https://drive.google.com/file/d/1krwSpOLB4gy5WTb3YZfozcpAm_iHDeS8/view>
