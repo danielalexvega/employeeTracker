@@ -2,6 +2,8 @@
 
 Employee Tracker is an interface that makes it easy for non-developers to view and interact with information stored in a database. This app uses node, inquirer, and MySQL.
 
+![](images/EmployeeTrackerBeginning.JPG)
+
 [Click] to see the video of the app being demoed.
 
 ## Description
