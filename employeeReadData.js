@@ -297,25 +297,29 @@ const viewAllRoles = async () => {
 }
 //Add a new role to the company
 const addRole = async () => {
-    let newRoleTitle = await askNewRole();
-    newRoleTitle = newRoleTitle.response;
-
-    let departments = await query.queryAllDepartments();
-    departments = departments.map(obj => obj.Departments);
-
-    let newRoleDepartment = await askNewRoleDepartment(departments);
-    newRoleDepartment = newRoleDepartment.response;
-
-    let newRoleSalary = await askNewRoleSalary();
-    newRoleSalary = parseInt(newRoleSalary.response);
-
-    let newRoleDepartmentID = await query.queryDepartmentID(newRoleDepartment);
-    newRoleDepartmentID = newRoleDepartmentID[0].id;
-
-    console.log(`
-    Now adding role ${newRoleTitle} in the ${newRoleDepartment} department`);
-    await query.addNewRole(newRoleTitle, newRoleSalary, newRoleDepartmentID);
-    displayStartover();
+    try{
+        let newRoleTitle = await askNewRole();
+        newRoleTitle = newRoleTitle.response;
+    
+        let departments = await query.queryAllDepartments();
+        departments = departments.map(obj => obj.Departments);
+    
+        let newRoleDepartment = await askNewRoleDepartment(departments);
+        newRoleDepartment = newRoleDepartment.response;
+    
+        let newRoleSalary = await askNewRoleSalary();
+        newRoleSalary = parseInt(newRoleSalary.response);
+    
+        let newRoleDepartmentID = await query.queryDepartmentID(newRoleDepartment);
+        newRoleDepartmentID = newRoleDepartmentID[0].id;
+    
+        console.log(`
+        Now adding role ${newRoleTitle} in the ${newRoleDepartment} department`);
+        await query.addNewRole(newRoleTitle, newRoleSalary, newRoleDepartmentID);
+        displayStartover();
+    } catch (err) {
+        throw(err);
+    }
 }
 //Remove a role from the company
 const removeRole = async () => {
