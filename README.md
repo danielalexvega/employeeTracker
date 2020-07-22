@@ -37,11 +37,11 @@ When the user selects 'View all Employees', a table is displayed with the employ
 
 When ever the user wants to get information about departments, or roles, they are presented with a list that they can use arrow keys to scroll up or down. 
 
-![](images/viewDepartments)
+![](images/viewDepartments.JPG)
 
 An example of the display when the user selects 'View all employees by department'.
 
-![](images/enggineeringDepartment.JPG)
+![](images/engineeringDepartment.JPG)
 
 
 
