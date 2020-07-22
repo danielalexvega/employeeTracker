@@ -46,4 +46,4 @@ If you have more questions, you can hit me up on twitter @zlamdanielvega.
   [MySql]: <https://www.npmjs.com/package/mysql>
   [jQuery]: <http://jquery.com>
   [InquirerJs]: <https://www.npmjs.com/package/inquirer/v/0.2.3>
-  [Click]<https://drive.google.com/file/d/1krwSpOLB4gy5WTb3YZfozcpAm_iHDeS8/view>
+  [Click]: <https://drive.google.com/file/d/1krwSpOLB4gy5WTb3YZfozcpAm_iHDeS8/view>
