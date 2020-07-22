@@ -33,11 +33,19 @@ At the beginning of the app, the user is presented with a list of options to pic
 
 When the user selects 'View all Employees', a table is displayed with the employees' department, role, and full name.
 
-![](ViewAllEmployees.JPG)
+![](images/ViewAllEmployees.JPG)
+
+When ever the user wants to get information about departments, or roles, they are presented with a list that they can use arrow keys to scroll up or down. 
+
+![](images/viewDepartments)
+
+An example of the display when the user selects 'View all employees by department'.
+
+![](images/enggineeringDepartment.JPG)
 
 
 
-##Tech
+## Tech
 
 Note Taker users a number of open source projects to work properly:
 
